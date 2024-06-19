@@ -44,13 +44,13 @@ img {
   user-select: none;
   -webkit-user-drag: none;
   cursor: pointer;
-  outline: solid 2pt #94ab41;
+  outline: solid 2pt #b5d14e;
   outline-offset: 2px;
   transform: scale(1.25);
 }
 .name-location {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.6rem;
   width: 100%;
   flex-direction: column;
   padding: 1rem;
@@ -61,6 +61,12 @@ img {
   text-align: center;
   backdrop-filter: blur(5px);
   /* background: hsla(255,100%,100%,0.45); */
+}
+.location,.career,.name {
+  transition: all 0.2s linear;
+}
+.location:hover, .career:hover, .name:hover {
+  text-decoration: underline;
 }
 .items {
   display: flex;
@@ -78,7 +84,6 @@ a {
 .link-list {
   display: flex;
   gap: 1rem;
-
   flex-grow: 1;
   border-radius: 1rem;
   padding: 1rem;
@@ -96,12 +101,12 @@ a {
   background-color: rgba(0, 0, 0, 0.75);
 }
 .links:hover {
-  outline: solid 2pt #94ab41;
+  outline: solid 2pt #b5d14e;
   outline-offset: 4px;
-  background-color: #94ab41;
+  background-color: #b5d14e;
 }
 
-.links:hover a{
-    color: black;
-    font-weight: bolder;
+.links:hover a {
+  color: black;
+  font-weight: bolder;
 }
